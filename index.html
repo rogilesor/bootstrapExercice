@@ -29,7 +29,7 @@
       	}
 
     .ajustement{
-      margin-bottom: 4px;
+      margin-bottom: 3px;
       margin-top: 0px;
       padding-bottom: 0px;
       padding-top: 0px;
@@ -57,6 +57,9 @@
 		  border-radius: 15px;
 		}
 
+    /*les classes inDiv1 et inDiv2 permettent d'ajuster les marges en prennant des valeurs différentes*/
+    /*en fonction de la taille de l'ecran*/
+
     .inDiv1{
         padding: 0 0 0 0;
         margin: 0 0 0 0;
@@ -73,6 +76,7 @@
 
     
     @media (max-width: 768px){
+    
     #left{
         padding: 0px 0px 2px 0px;
         max-width: 640px;
@@ -82,7 +86,6 @@
         padding: 0 3px 0 3px;
         margin: 0 0 2px 0;
     }
-
 
     .inDiv2{
         padding: 0 6px 0 6px;
@@ -98,13 +101,16 @@
         padding: 2px 0px 0px 0px;
         max-width: 640px;
     }
+
     .image{
-        /*max-width: 640px;*/
         margin: 0 auto;
     }    
+
     .logo{
-        display:none;
+      /*fait disparaitre le logo*/
+        display:none; 
 	  }
+
     .img-responsive{
         max-width: 640;
         margin: 0 auto;
@@ -156,22 +162,15 @@
   	@media (min-width: 992px) {
     
     #side1 {
-      /*padding-left: 4px;
-      padding-right: 0px;
-      padding-top: 0px;
-      padding-bottom: 2px;*/
       padding: 0 0 2px 9px;
     }
 
     #left{
       margin-top: 2px;
       padding-bottom: 0px; 
-      /*margin-bottom: 4px; */
     }
 
     #side2 {
-      /*padding-left: 4px; 
-      padding-bottom: 2px;*/
       padding: 2px 0 0px 9px;
       vertical-align: bottom; 
     }
@@ -212,56 +211,60 @@
 	    			<h1>La maison de l'architecte</h1>				
 	    		</div>
 	    	</div>
-	    </div>
-	      
+	    </div>	      
 	    </header>
 
       <div class="row">
     	<div class="inDiv1 full-width">
-    		<div class="col-md-8 col-sm-12 vcolorL inDiv1">
+    	
+      	<div class="col-md-8 col-sm-12 vcolorL inDiv1">
         	        <div class="media">
                     <div class="image">
-        	        <a href="#"><img id="left" class="img-responsive" src="assets/img/city1.jpg" alt="Nos réalisations"></a>
-        	        </div>
-                    </div>
+        	             <a href="#"><img id="left" class="img-responsive" src="assets/img/city1.jpg" alt="Nos réalisations"></a>
+        	          </div>
+                  </div>
     		</div>
 
     		<div class="col-md-4 col-sm-12 vcolorR inDiv2">
-                <div class="row">
-             	<div class="inDiv2" style="background-color: none;">
-
-        			<div class="col-md-12 col-sm-6 col-xs-12 inDiv2" style="background-color:none">
-        				<div class="media" style="background-color: none;">
-        				<a href="#"><img id="side1" class="img-responsive" src="assets/img/side1.jpg" alt="Nos projets"></a>
-        				</div>
-        		    <div class="ajustement"></div>
-              </div>
+                  <div class="row">
+             	        <div class="inDiv2">
+        			          <div class="col-md-12 col-sm-6 col-xs-12 inDiv2">
+        				          <div class="media">
+        				              <a href="#"><img id="side1" class="img-responsive" src="assets/img/side1.jpg" alt="Nos projets"></a>
+        				          </div>
+                              <!-- La ligne ci-dessous permet d'ajuster les images -->
+        		                  <div class="ajustement"></div>  
+                        </div>
     			     
               
 
-        			<div class="col-md-12 col-sm-6 col-xs-12 inDiv2">
-    					<div class="media" style="vertical-align: bottom; background-color: none;">
-    					<a href="#"><img id="side2" class="img-responsive" src="assets/img/side2.jpg" alt="Notre ambition"></a>
-    					</div>
-        			</div>
-                </div>
-                </div>
+        			          <div class="col-md-12 col-sm-6 col-xs-12 inDiv2">
+    					             <div class="media" style="vertical-align: bottom;">
+    					                 <a href="#"><img id="side2" class="img-responsive" src="assets/img/side2.jpg" alt="Notre ambition"></a>
+    					             </div>
+        			          </div>
+                      </div>
+                  </div>
+    	  </div>
+    	
+      </div>
     	</div>
-    	</div>
-    	</div>
-        <br>
-    	<div class="row">
+      
+      <br>
+    	
+      <div class="row">
 	    <footer>
 	    	<div class="center-block" style="max-width:170px">
 			    <a class="btn btn-primary btn-circle" href="#"><i class="fa fa-twitter fa-2x"></i></a>
 	    		<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-	      		<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-	      		<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-	      		<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-spotify fa-2x"></i></a>
-			</div>
+	      	<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+	      	<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+	      	<a class="btn btn-primary btn-circle" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+			  </div>
 	    </footer>
 	    </div>
-	</div>
+	
+  </div>
 
   </body>
 
