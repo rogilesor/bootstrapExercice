@@ -106,11 +106,6 @@
         margin: 0 auto;
     }    
 
-    .logo{
-      /*fait disparaitre le logo*/
-        display:none; 
-	  }
-
     .img-responsive{
         max-width: 640;
         margin: 0 auto;
@@ -153,9 +148,6 @@
       padding: 0px 0 0 2px;
       
     }
-    .logo{
-        display: true;
-    }
   	}
 
   	/* Styles pour les écrans moyens et grands */
@@ -173,12 +165,6 @@
     #side2 {
       padding: 2px 0 0px 9px;
       vertical-align: bottom; 
-    }
-
-    div.row::before{}
-
-    .logo{
-        display: true;
     }
 
     .vcolorL {
@@ -200,12 +186,10 @@
 	    <header>
 	    <div class="jumbotron">
 	    	<div class="row">
-	    		<div class="logo">
 	    		<div class="col-md-2 col-sm-3">
 	    			<div class="media">
-	    				<a href="#"><img src="assets/img/maison.png" alt="logo"></a>		
+	    				<a href="#"><img class="hidden-xs" src="assets/img/maison.png" alt="logo"></a>		
 	    			</div>
-	    		</div>
 	    		</div>
 	    		<div class="col-md-10 col-sm-9 col-xs-12" style="text-align: center;">
 	    			<h1>La maison de l'architecte</h1>				
